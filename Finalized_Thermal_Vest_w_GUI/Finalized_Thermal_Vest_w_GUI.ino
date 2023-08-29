@@ -265,7 +265,7 @@ void loop(void)
     }
   }
 
-  if (output > 50 && !(prevOutput <= 50)) {
+  if (output > 50 && !(prevOutput <= 50) || core_temp < 30) {
     turnOffCell1();
     turnOffCell2();
     turnOffCell3();
