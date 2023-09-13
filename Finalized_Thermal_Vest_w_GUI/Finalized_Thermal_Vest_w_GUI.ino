@@ -62,7 +62,7 @@ void turnOffCell4();
 double input;
 double output;
 double prevOutput = 1;
-double setPoint = 15; // temperature in C
+double setPoint = 0; // temperature in C
 double prevSetPoint = setPoint;
 double p = 100;
 double i = 100;
@@ -265,7 +265,7 @@ void loop(void)
     }
   }
 
-  if (output > 50 && !(prevOutput <= 50) || core_temp < 30 || steinhart_1 < 20 || steinhart_2 < 20 || steinhart_3 < 20 || steinhart_4 < 20 || steinhart_5 < 20) {
+  if (output > 50 && !(prevOutput <= 50)) {
     turnOffCell1();
     turnOffCell2();
     turnOffCell3();
