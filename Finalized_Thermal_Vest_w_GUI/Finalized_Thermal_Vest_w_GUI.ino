@@ -265,7 +265,7 @@ void loop(void)
     }
   }
 
-  if (output > 50 && !(prevOutput <= 50) || steinhart_1 < 20 || steinhart_2 < 20 || steinhart_3 < 20, steinhart_4 < 20 || steinhart_5 < 20 || core_temp < 32) {
+  if (output > 50 && !(prevOutput <= 50) || steinhart_1 < 20 || steinhart_2 < 20 || steinhart_3 < 20, steinhart_4 < 20 || steinhart_5 < 20) {
     turnOffCell1();
     turnOffCell2();
     turnOffCell3();
